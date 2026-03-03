@@ -16,58 +16,84 @@
 <body>
 <!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
 <header>
-    <h1>Vaanguard</h1>
-        <nav class="navbar">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container">
+            <svg class="logo" viewBox="0 0 100 100" width="50" height="50"></svg>
+            <h1>Vanguard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 </header>
+<main>
 
+    <div class="container">
     <section class="innovation-investment">
         <h2>Innovation & Investment</h2>
             <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.</p>
-            <p>Request a Consultation</p>
+            <button type="button">Request a Consultation</button>
     </section>
+    </div>
 
+    <div class="container">
     <section class="expertise">
         <h2>Our Expertise. Your Edge.</h2>
             <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward.
                Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.</p>
     </section>
+    </div>
 
+    <div class="container">
     <section class="offer">
         <h2>What We Offer</h2>
             <h3>Strategic Growth Consulting</h3>
             <p>Unlock new revenue streams and optimize market expansion strategies.</p>
     </section>
+    </div>
 
+    <div class="container">
     <section class="impact">
             <h3>High-Impact Investment Solutions</h3>
             <p>Maximize returns with data-driven portfolio management.</p>
-    </section>
+    </div>
 
+    <div class="container">
     <section class="business">
             <h3>Business Acceleration & Mergers</h3>
             <p>Identify opportunities for rapid growth and high-value acquisitions.</p>
-    </section>
+    </div>
 
+    <div class="container">
     <section class="transformation">
             <h3>Digital Transformation</h3>
             <p>Stay at the forefront of industry advancements with AI, blockchain, and automation.</p>
-    </section>
+    </div>
 
+    <div class="container">
+    <section class="exclusive">
             <h3>Exclusive Executive Advisory Services</h3>
             <p>Personalized insights and leadership support for C-suite executives and high-net-worth investors.</p>
+    </div>
 
+    <div class="container">
+    <section class="innovtion">
             <h3>Corporate Innovation</h3>
             <p>Strategic implementation of new ideas, technologies, and processes to drive business growth, enhance competitive advantage, and adapt to evolving market demands.</p>
+    </div>
 
+    </section>
+
+    <div class="container">           
     <section class="results">
         <h2>Proven Results</h2>
             <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
     </section>
+    </div>
 
+    <div class="container">            
     <section class="profits">
                 <h3>Profits</h3>
                     <table>
@@ -106,9 +132,12 @@
                             </tr>
                         </tbody>
                     </table>
-    </section>
+</section>
+</div>
 
+</main>
 
+    <div class="container">           
     <section class="growth">
                 <h3>Growth</h3>
 <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
@@ -119,48 +148,49 @@
                         <div class="bar" data-year="2023" style="--height: 85%;"></div>
                         <div class="bar" data-year="2024" style="--height: 100%;"></div>
                     </div>
+    </div>
     </section>
 
+    <div class="container"></div>
     <section class="contact-us">
         <h2>Contact Us</h2>
             <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
-            <form>
-                <fieldset>
-                    <label>Full Name:<br>
-                        <input type="text" name="name"><br>
-                    </label>
-                </fieldset>
 
-                <fieldset>
-                    <label>Email Address:<br>
-                        <input type="text" name="email-address"><br>
-                    </label>
-                </fieldset>
+            <form action="contact-form-handler.php" method="POST">
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-                <fieldset>
-                    <label>Company Name:<br>
-                        <input type="text" name="company-name"><br>
-                    </label>
-                </fieldset>
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
 
-                <fieldset>
-                    <label>Industry:<br>
-                        <input type="text" name="industry"><br>
-                    </label>
-                </fieldset>
+                    <div>
+                        <label for="Company Name">Company Name</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
 
-                <fieldset>
-                    <label>How can we help you?<br>
-                        <input type="text" name="help"><br>
-                    </label>
-                </fieldset>
+                    <div>
+                        <label for="name">Industry</label>
+                        <input type="text" id="industry" name="industry" required>
+                    </div>
+
+                    <div>
+                        <label for="help">How can we help you?</label>
+                        <input type="text" id="help" name="help" required>
+                    </div>                   
 
                 <input type="submit" value="Submit">
             </form>
     </section>
 
     <footer>
-        <p>For educational purposes only. </p>
-        <p>Email: info@vaanguard.com</p> 
-        <p>Phone: 480.123.4567</p>
+        <p>&copy For educational purposes only. </p><br>
+        <address>Email: info@vaanguard.com</address><br> 
+        <address>Phone: 480.123.4567</address><br>
     </footer>
+
+</body>
+</html>

@@ -64,8 +64,15 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
-
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
+body {
+  font-family:"Inter";
+  margin: 0;
+  line-height: 1.5;
+  min-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
@@ -78,6 +85,24 @@ table {
     display: flex;
     background-color: #000000;
     color: #007BFF;
+    text-decoration: none;
+    
+}
+
+h1 {
+    font-family:"Inter";
+}
+
+h2 {
+    font-family:"Inter";
+}
+
+h3 {
+    font-family:"Inter";
+}
+
+p {
+    font-family:"Inter";
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
@@ -86,9 +111,15 @@ table {
     height: 80vh;
     display: grid;
     place-items: center;
-    text-align: center;
     padding: 1rem;
     overflow: hidden;
+    color: var(--white);
+    font-family: "Inter";
+}
+
+.contact-us {
+    background-color: #000000;
+    color: var(--white);
 }
 
 footer {
@@ -98,7 +129,7 @@ footer {
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
  .logo {
-    content: "";
+    content: "svg";
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
@@ -126,6 +157,11 @@ footer {
     position: relative;
     transition: height 0.5s ease-out;
     height: 0;
+
+.bar-anded {
+  max-height: 500px; 
+}
+    
 }
 /* THIS ONE IS DONE FOR YOU */
 .bar::after {
@@ -170,3 +206,17 @@ footer {
 
 
 /* MEDIA QUERIES (LARGE) */
+
+    #results {
+    grid-template-columns: 1fr 1fr;
+    }
+    .results-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .results-table {
+        width: 100%;
+    }
+    .bar-chart {
+        width:100%;
+    }
